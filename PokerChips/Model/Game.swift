@@ -35,10 +35,10 @@ class Game {
         self.folded = []
         self.all_in = []
         
-        self.min_buyin = 10
-        self.max_buyin = 50
-        self.small_blinds = 0.1
-        self.big_blinds = 0.2
+        self.min_buyin = 100
+        self.max_buyin = 200
+        self.small_blinds = 1
+        self.big_blinds = 2
         
         self.dealer = 0
         self.pot = []
@@ -48,7 +48,13 @@ class Game {
     }
 
     func new_game() -> Void {
-        self.players = []
+        self.players = [Player(playerName: "a"),
+                        Player(playerName: "b"),
+                        Player(playerName: "c"),
+                        Player(playerName: "d"),
+                        Player(playerName: "e"),
+                        Player(playerName: "f")]
+        self.num_players = 6
         self.folded = []
         self.all_in = []
         self.dealer = 0
@@ -79,11 +85,18 @@ class Game {
     }
     
     func set_buyin(low: Int, high: Int) -> Void {
-        
+
     }
     
     func set_blinds(small: Double, big: Double) -> Void {
         
+    }
+    
+    func end_turn() {
+        self.turn += 1
+        if self.turn == self.num_players {
+            self.turn = 0
+        }
     }
     
     

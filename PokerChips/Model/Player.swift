@@ -31,5 +31,14 @@ class Player {
         self.playing = false
     }
     
+    func join() -> Void {
+        self.playing = true
+    }
+    
+    func leave() -> Void {
+        self.playing = false
+        self.currentBet = 0
+    }
+    
 }
 

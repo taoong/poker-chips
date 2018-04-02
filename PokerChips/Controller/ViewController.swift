@@ -9,9 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var game = Game()
+    
+    func updateUI() {
+        for player in players {
+            if game.turn == player.tag {
+                player.backgroundColor = UIColor.green
+            } else {
+                player.backgroundColor = UIColor.yellow
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        game.new_game()
+        updateUI()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,7 +33,20 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBOutlet var players: [UIImageView]!
+    
+    @IBAction func check(_ sender: Any) {
+        game.end_turn()
+        updateUI()
+    }
+    
+    @IBAction func bet(_ sender: Any) {
+        
+    }
+    
+    @IBAction func fold(_ sender: Any) {
+    }
+    
 }
 
