@@ -204,13 +204,13 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wi-bP-dit">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wi-bP-dit">
                                 <rect key="frame" x="469" y="257" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdv-Ji-SDe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdv-Ji-SDe">
                                 <rect key="frame" x="189" y="257" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -222,28 +222,28 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="HvB-1e-Plp">
                                 <rect key="frame" x="145" y="288" width="94" height="29"/>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Max Buy-in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LV4-E9-Qkj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Buy-in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LV4-E9-Qkj">
                                 <rect key="frame" x="151" y="228" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IT6-bI-BkQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IT6-bI-BkQ">
                                 <rect key="frame" x="469" y="126" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0w-zX-mCy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0w-zX-mCy">
                                 <rect key="frame" x="189" y="126" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Z65-Hf-Pwm">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Z65-Hf-Pwm">
                                 <rect key="frame" x="427" y="155" width="94" height="29"/>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ss6-Su-W4q">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ss6-Su-W4q">
                                 <rect key="frame" x="145" y="157" width="94" height="29"/>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min Buy-in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg8-me-66k">
@@ -270,8 +270,10 @@
                             <constraint firstItem="HvB-1e-Plp" firstAttribute="leading" secondItem="guu-f4-wPn" secondAttribute="leading" constant="145" id="0p6-iW-pKG"/>
                             <constraint firstItem="Vdv-Ji-SDe" firstAttribute="top" secondItem="LV4-E9-Qkj" secondAttribute="bottom" constant="8" id="1u9-eL-vzV"/>
                             <constraint firstItem="guu-f4-wPn" firstAttribute="trailing" secondItem="DkL-aX-otE" secondAttribute="trailing" constant="155" id="3SK-ra-m3a"/>
+                            <constraint firstItem="Vdv-Ji-SDe" firstAttribute="leading" secondItem="guu-f4-wPn" secondAttribute="leading" constant="189" id="3hX-uF-5en"/>
                             <constraint firstItem="O0w-zX-mCy" firstAttribute="top" secondItem="Hg8-me-66k" secondAttribute="bottom" constant="8" id="6V9-nC-xCK"/>
                             <constraint firstItem="guu-f4-wPn" firstAttribute="bottom" secondItem="bSQ-xs-aDl" secondAttribute="bottom" constant="60" id="6o1-rg-WMB"/>
+                            <constraint firstItem="LV4-E9-Qkj" firstAttribute="leading" secondItem="guu-f4-wPn" secondAttribute="leading" constant="151" id="7Ar-vR-ttJ"/>
                             <constraint firstItem="Z65-Hf-Pwm" firstAttribute="top" secondItem="IT6-bI-BkQ" secondAttribute="bottom" constant="8" id="M0s-pS-moW"/>
                             <constraint firstItem="dgS-XM-A4a" firstAttribute="top" secondItem="guu-f4-wPn" secondAttribute="top" constant="97" id="O5b-ef-F88"/>
                             <constraint firstItem="7wi-bP-dit" firstAttribute="firstBaseline" secondItem="DkL-aX-otE" secondAttribute="baseline" constant="28.5" id="OOL-PU-g2Z"/>
@@ -280,10 +282,15 @@
                             <constraint firstItem="IT6-bI-BkQ" firstAttribute="top" secondItem="dgS-XM-A4a" secondAttribute="bottom" constant="8" id="Tqh-pe-YtD"/>
                             <constraint firstItem="Hg8-me-66k" firstAttribute="leading" secondItem="guu-f4-wPn" secondAttribute="leading" constant="153" id="Z4S-u8-ptg"/>
                             <constraint firstItem="guu-f4-wPn" firstAttribute="trailing" secondItem="dgS-XM-A4a" secondAttribute="trailing" constant="146" id="fT5-Go-Kzc"/>
+                            <constraint firstItem="O0w-zX-mCy" firstAttribute="leading" secondItem="guu-f4-wPn" secondAttribute="leading" constant="189" id="hhc-MZ-7q9"/>
                             <constraint firstItem="ss6-Su-W4q" firstAttribute="top" secondItem="O0w-zX-mCy" secondAttribute="bottom" constant="10" id="hsW-xW-Nra"/>
+                            <constraint firstItem="guu-f4-wPn" firstAttribute="trailing" secondItem="7wi-bP-dit" secondAttribute="trailing" constant="187" id="mTa-PV-Cbn"/>
                             <constraint firstItem="Hg8-me-66k" firstAttribute="top" secondItem="guu-f4-wPn" secondAttribute="top" constant="97" id="nqO-PS-2Jz"/>
                             <constraint firstItem="HvB-1e-Plp" firstAttribute="top" secondItem="Vdv-Ji-SDe" secondAttribute="bottom" constant="10" id="qcj-U1-hfy"/>
+                            <constraint firstItem="ss6-Su-W4q" firstAttribute="leading" secondItem="guu-f4-wPn" secondAttribute="leading" constant="145" id="udk-Xj-Rfm"/>
+                            <constraint firstItem="guu-f4-wPn" firstAttribute="trailing" secondItem="Z65-Hf-Pwm" secondAttribute="trailing" constant="146" id="v73-Dt-Vpv"/>
                             <constraint firstItem="bSQ-xs-aDl" firstAttribute="top" secondItem="7wi-bP-dit" secondAttribute="bottom" constant="8" id="xKr-6Z-1tJ"/>
+                            <constraint firstItem="guu-f4-wPn" firstAttribute="trailing" secondItem="IT6-bI-BkQ" secondAttribute="trailing" constant="187" id="zVj-4n-2RY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="guu-f4-wPn"/>
                     </view>
