@@ -24,32 +24,53 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    func updateBlinds() {
+        stepper.minimumValue = game.big_blinds
+        stepper.value = game.big_blinds
+        betValue.text = String(stepper.value)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         game.new_game()
         updateUI()
-        // Do any additional setup after loading the view, typically from a nib.
+        updateBlinds()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
+    @IBOutlet weak var pot: UILabel!
     
     @IBOutlet var players: [UIImageView]!
     
+    @IBAction func stepperPressed(_ sender: UIStepper) {
+        betValue.text = String(sender.value)
+    }
+    
+    @IBOutlet weak var stepper: UIStepper!
+    
+    @IBOutlet weak var betValue: UILabel!
+    
     @IBAction func check(_ sender: Any) {
-        game.end_turn()
-        updateUI()
+        end_turn()
     }
     
     @IBAction func bet(_ sender: Any) {
-        
+        pot.text = String(Double(pot.text!)! + stepper.value)
+        end_turn()
     }
     
     @IBAction func fold(_ sender: Any) {
         game.fold(playerTag: game.turn)
+        end_turn()
+    }
+    
+    func end_turn() {
+        stepper.value = game.big_blinds
+        betValue.text = String(stepper.value)
         game.end_turn()
         updateUI()
     }

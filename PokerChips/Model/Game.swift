@@ -106,6 +106,4 @@ class Game {
         folded.append(playerTag)
     }
     
-    
-    
 }

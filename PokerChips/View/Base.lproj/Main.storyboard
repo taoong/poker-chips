@@ -138,23 +138,40 @@
                                     <action selector="bet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QKU-6k-FEW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRL-9z-imf">
-                                <rect key="frame" x="328" y="177" width="11" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRL-9z-imf">
+                                <rect key="frame" x="229" y="177" width="208" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="-3" minimumValue="-3" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Q6j-u4-hly">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Q6j-u4-hly">
                                 <rect key="frame" x="553" y="325" width="94" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="3kL-C4-S19"/>
+                                </connections>
                             </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oR-FE-uvm">
+                                <rect key="frame" x="418" y="329" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q6j-u4-hly" secondAttribute="bottom" constant="21" id="380-1B-qR4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8oR-FE-uvm" secondAttribute="bottom" constant="25" id="Eiv-4X-LDh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q6j-u4-hly" secondAttribute="trailing" constant="20" id="hPW-jm-lmO"/>
+                            <constraint firstItem="Q6j-u4-hly" firstAttribute="leading" secondItem="8oR-FE-uvm" secondAttribute="trailing" constant="19" id="hXc-Ne-EWI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <size key="freeformSize" width="667" height="375"/>
                     <connections>
+                        <outlet property="betValue" destination="8oR-FE-uvm" id="nfs-cW-veW"/>
+                        <outlet property="pot" destination="TRL-9z-imf" id="HAY-tv-wBp"/>
+                        <outlet property="stepper" destination="Q6j-u4-hly" id="sx8-KQ-P4b"/>
                         <outletCollection property="players" destination="EiO-jZ-VBe" collectionClass="NSMutableArray" id="uk1-zy-pUj"/>
                         <outletCollection property="players" destination="aIW-Vg-5N2" collectionClass="NSMutableArray" id="dco-ZU-tXv"/>
                         <outletCollection property="players" destination="wcO-iw-vsZ" collectionClass="NSMutableArray" id="fUx-gB-KQM"/>
