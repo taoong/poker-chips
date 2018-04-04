@@ -12,7 +12,7 @@ class Game {
     var max_players : Int
     var num_players : Int
     var players : Array<Player>
-    var folded : Array<Player>
+    var folded : Array<Int>
     var all_in : Array<Player>
     
     // Money Variables
@@ -48,12 +48,12 @@ class Game {
     }
 
     func new_game() -> Void {
-        self.players = [Player(playerName: "a"),
-                        Player(playerName: "b"),
-                        Player(playerName: "c"),
-                        Player(playerName: "d"),
-                        Player(playerName: "e"),
-                        Player(playerName: "f")]
+        self.players = [Player(playerName: "a", seat: 0),
+                        Player(playerName: "b", seat: 1),
+                        Player(playerName: "c", seat: 2),
+                        Player(playerName: "d", seat: 3),
+                        Player(playerName: "e", seat: 4),
+                        Player(playerName: "f", seat: 5)]
         self.num_players = 6
         self.folded = []
         self.all_in = []
@@ -94,9 +94,16 @@ class Game {
     
     func end_turn() {
         self.turn += 1
+        while self.folded.contains(self.turn) {
+            self.turn += 1
+        }
         if self.turn == self.num_players {
             self.turn = 0
         }
+    }
+    
+    func fold(playerTag: Int) {
+        folded.append(playerTag)
     }
     
     

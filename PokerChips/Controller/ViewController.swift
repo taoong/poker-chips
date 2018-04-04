@@ -19,6 +19,9 @@ class ViewController: UIViewController {
             } else {
                 player.backgroundColor = UIColor.yellow
             }
+            if game.folded.contains(player.tag) {
+                player.backgroundColor = UIColor.red
+            }
         }
     }
 
@@ -46,6 +49,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func fold(_ sender: Any) {
+        game.fold(playerTag: game.turn)
+        game.end_turn()
+        updateUI()
     }
     
 }

@@ -11,13 +11,15 @@ import Foundation
 class Player {
     
     var name : String
+    var seat : Int
     var money : Double
     var currentBet : Double
     var profit : Double
     var playing : Bool
     
-    init (playerName : String) {
+    init (playerName : String, seat : Int) {
         self.name = playerName
+        self.seat = seat
         self.money = 0
         self.currentBet = 0
         self.profit = 0
