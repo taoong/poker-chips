@@ -94,11 +94,14 @@ class Game {
     
     func end_turn() {
         self.turn += 1
-        while self.folded.contains(self.turn) {
-            self.turn += 1
-        }
         if self.turn == self.num_players {
             self.turn = 0
+        }
+        while self.folded.contains(self.turn) {
+            self.turn += 1
+            if self.turn == self.num_players {
+                self.turn = 0
+            }
         }
     }
     
