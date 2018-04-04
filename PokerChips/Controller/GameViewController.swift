@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GameViewController: UIViewController {
     
     var game = Game()
     
@@ -40,6 +40,10 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func menuButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBOutlet weak var pot: UILabel!
