@@ -63,6 +63,7 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func bet(_ sender: Any) {
+        game.pot[game.active_pot] += stepper.value
         pot.text = String(Double(pot.text!)! + stepper.value)
         end_turn()
     }
@@ -77,6 +78,15 @@ class GameViewController: UIViewController {
         betValue.text = String(stepper.value)
         game.end_turn()
         updateUI()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToSettings" {
+            if let dest = segue.destination as? SettingsViewController {
+                dest.delegate = self
+                dest.currGame = game
+            }
+        }
     }
     
 }

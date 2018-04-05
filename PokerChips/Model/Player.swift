@@ -20,7 +20,7 @@ class Player {
     init (playerName : String, seat : Int) {
         self.name = playerName
         self.seat = seat
-        self.money = 0
+        self.money = 100
         self.currentBet = 0
         self.profit = 0
         self.playing = false

@@ -16,14 +16,16 @@ class Game {
     var all_in : Array<Player>
     
     // Money Variables
-    var min_buyin : Int
-    var max_buyin : Int
+    var min_buyin : Double
+    var max_buyin : Double
     var small_blinds : Double
     var big_blinds : Double
     
     // Game Variables
     var dealer : Int
-    var pot : Array<Int>
+    var sb : Int
+    var bb : Int
+    var pot : Array<Double>
     var active_pot : Int
     var turn : Int
     var board_bet : Double
@@ -41,24 +43,29 @@ class Game {
         self.big_blinds = 2
         
         self.dealer = 0
-        self.pot = []
+        self.sb = 1
+        self.bb = 2
+        self.pot = [0]
         self.active_pot = 0
         self.turn = 0
         self.board_bet = 0
     }
 
     func new_game() -> Void {
-        self.players = [Player(playerName: "a", seat: 0),
-                        Player(playerName: "b", seat: 1),
-                        Player(playerName: "c", seat: 2),
-                        Player(playerName: "d", seat: 3),
-                        Player(playerName: "e", seat: 4),
-                        Player(playerName: "f", seat: 5)]
-        self.num_players = 6
+        self.players = [Player(playerName: "Alex", seat: 0),
+                        Player(playerName: "Benny", seat: 1),
+                        Player(playerName: "Chris", seat: 2),
+                        Player(playerName: "Dave", seat: 3),
+                        Player(playerName: "Evan", seat: 4),
+                        Player(playerName: "Frank", seat: 5),
+                        Player(playerName: "Grant", seat: 6),
+                        Player(playerName: "Hank", seat: 7),
+                        Player(playerName: "Ivan", seat: 8)]
+        self.num_players = 9
         self.folded = []
         self.all_in = []
         self.dealer = 0
-        self.pot = []
+        self.pot = [0]
         self.active_pot = 0
         self.turn = 0
         self.board_bet = 0
@@ -72,24 +79,14 @@ class Game {
         
     }
     
-    func set_max_players(num : Int) -> Void {
-        if (num < 2) {
-            print("too few players")
-        }
-        if (num > 9) {
-            print("too many players")
-        }
-        else {
-            max_players = num
-        }
-    }
-    
-    func set_buyin(low: Int, high: Int) -> Void {
-
+    func set_buyin(low: Double, high: Double) -> Void {
+        self.min_buyin = low
+        self.max_buyin = high
     }
     
     func set_blinds(small: Double, big: Double) -> Void {
-        
+        self.small_blinds = small
+        self.big_blinds = big
     }
     
     func end_turn() {
