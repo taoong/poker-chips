@@ -266,6 +266,15 @@
                         <outletCollection property="players" destination="WmX-5m-B9n" collectionClass="NSMutableArray" id="MKi-PL-73y"/>
                         <outletCollection property="players" destination="eTm-Sq-5YI" collectionClass="NSMutableArray" id="I7Q-tQ-y2C"/>
                         <outletCollection property="players" destination="b5a-Df-ybt" collectionClass="NSMutableArray" id="amW-Xd-npT"/>
+                        <outletCollection property="playerNames" destination="2Xi-iz-EAB" collectionClass="NSMutableArray" id="B90-cB-oyk"/>
+                        <outletCollection property="playerNames" destination="OLk-jA-bri" collectionClass="NSMutableArray" id="Bqw-BX-iDF"/>
+                        <outletCollection property="playerNames" destination="b4J-Iq-9F6" collectionClass="NSMutableArray" id="alw-qh-adv"/>
+                        <outletCollection property="playerNames" destination="6kG-oG-jR2" collectionClass="NSMutableArray" id="5tA-Hz-48m"/>
+                        <outletCollection property="playerNames" destination="l8g-hh-4uj" collectionClass="NSMutableArray" id="mz7-3n-AS8"/>
+                        <outletCollection property="playerNames" destination="MEQ-pJ-Gev" collectionClass="NSMutableArray" id="gEg-Zs-v5A"/>
+                        <outletCollection property="playerNames" destination="wIy-VL-xCu" collectionClass="NSMutableArray" id="Q3c-ZR-b1Q"/>
+                        <outletCollection property="playerNames" destination="PmJ-3P-q2k" collectionClass="NSMutableArray" id="XiS-TF-Nqd"/>
+                        <outletCollection property="playerNames" destination="eMn-S7-qH8" collectionClass="NSMutableArray" id="fCC-QQ-4fB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

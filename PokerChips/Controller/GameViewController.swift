@@ -50,6 +50,8 @@ class GameViewController: UIViewController {
     
     @IBOutlet var players: [UIImageView]!
     
+    @IBOutlet var playerNames: [UILabel]!
+    
     @IBAction func stepperPressed(_ sender: UIStepper) {
         betValue.text = String(sender.value)
     }
