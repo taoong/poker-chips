@@ -102,6 +102,10 @@ class Game {
         }
     }
     
+    func end_round() {
+        self.dealer += 1
+    }
+    
     func fold(playerTag: Int) {
         folded.append(playerTag)
     }
