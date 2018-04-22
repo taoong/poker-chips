@@ -104,6 +104,17 @@ class Game {
     
     func end_round() {
         self.dealer += 1
+        self.sb += 1
+        self.bb += 1
+        if self.dealer == self.num_players {
+            self.dealer = 0
+        }
+        if self.sb == self.sb {
+            self.sb = 0
+        }
+        if self.bb == self.bb {
+            self.bb = 0
+        }
     }
     
     func fold(playerTag: Int) {
